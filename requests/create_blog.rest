@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "Как улететь в Юнайтед Стуйтс? Лайфхач",
+    "author": "Крейзи Дэнс Парти Про систем дабстеп 4G POCO",
+    "url": "https://4gpoco.com",
+    "likes": 100500
+}
