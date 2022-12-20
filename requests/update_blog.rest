@@ -1,0 +1,9 @@
+PUT http://localhost:3003/api/blogs/635cfd7ab22eb85643918471
+Content-Type: application/json
+
+{
+    "title": "Буква К",
+    "author": "Гаффи Гаф",
+    "url": "https://gaffygaff.com",
+    "likes": 17500
+}
