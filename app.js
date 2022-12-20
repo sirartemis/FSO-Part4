@@ -7,6 +7,10 @@ const mongoose = require('mongoose')
 const config = require('./utils/config')
 const personsRouter = require('./controllers/persons')
 const blogsRouter = require('./controllers/blogs')
+const usersRouter = require('./controllers/users')
+const notesRouter = require('./controllers/notes')
+const loginRouter = require('./controllers/login')
+
 const {
     morgan,
     unknownEndpoint,
@@ -36,6 +40,9 @@ app.use(morgan(':method :url :status :res[content-length] - :response-time ms :b
 
 app.use('/api/persons', personsRouter)
 app.use('/api/blogs', blogsRouter)
+app.use('/api/users', usersRouter)
+app.use('/api/notes', notesRouter)
+app.use('/api/login', loginRouter)
 
 app.use(unknownEndpoint)
 app.use(errorHandler)
